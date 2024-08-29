@@ -3,46 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historical Timeline: BC & AD</title>
+    <title>Journey Through Indian Art History</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js"
 </head>
 <body>
     <div class="timeline-container">
-        <h1>Historical Timeline: BC & AD</h1>
+        <h1>Journey Through Indian Art History</h1>
+       
         <div class="timeline">
-            <div class="timeline-item left" data-image="image1.jpg" data-description="Detailed description of the 500 BC event.">
+            <!-- Indus Valley Civilization -->
+            <div class="timeline-item left" data-image="indus_valley_seals.jpg" data-description="These small, intricately carved seals were likely used for trade or administrative purposes. They feature animals, mythical creatures, and symbols that remain a mystery to this day." data-context="The seals provide insight into the trade, communication, and symbolic language of the Indus Valley people, indicating a complex and advanced society.">
                 <div class="content">
-                    <h2>500 BC</h2>
-                    <p>Short description of the event.</p>
+                    <h2>Indus Valley Seals (c. 3300–1300 BCE)</h2>
+                    <p>Engraved stone seals with animal motifs and undeciphered script.</p>
                 </div>
             </div>
-            <div class="timeline-item right" data-image="image2.jpg" data-description="Detailed description of the 400 BC event.">
+            
+            <!-- Maurya Empire -->
+            <div class="timeline-item right" data-image="lion_capital.jpg" data-description="The Lion Capital is the national emblem of India. Carved from a single piece of sandstone, it symbolizes power, courage, pride, and confidence." data-context="Commissioned by Emperor Ashoka, a key figure in spreading Buddhism across Asia, this capital originally topped an Ashokan pillar, representing the spread of dharma (moral law).">
                 <div class="content">
-                    <h2>400 BC</h2>
-                    <p>Short description of the event.</p>
+                    <h2>Lion Capital of Ashoka (c. 322–185 BCE)</h2>
+                    <p>A sandstone sculpture of four lions standing back-to-back.</p>
                 </div>
             </div>
-            <div class="timeline-item left" data-image="image3.jpg" data-description="Detailed description of the 300 BC event.">
+            
+            <!-- Gupta Period -->
+            <div class="timeline-item left" data-image="buddha_statue.jpg" data-description="This serene image of Buddha from Sarnath represents the pinnacle of Gupta art. The statue exemplifies the ideals of Buddhist art, with its calm expression and spiritual aura." data-context="The Gupta period is often called the 'Golden Age' of India, a time of significant cultural and artistic development, particularly in the depiction of religious figures.">
                 <div class="content">
-                    <h2>300 BC</h2>
-                    <p>Short description of the event.</p>
+                    <h2>Buddha Statue from Sarnath (c. 320–550 CE)</h2>
+                    <p>A sandstone statue of Buddha in a meditative pose.</p>
                 </div>
             </div>
-            <div class="timeline-item right" data-image="image4.jpg" data-description="Detailed description of the 100 AD event.">
+            
+            <!-- Chola Dynasty -->
+            <div class="timeline-item right" data-image="nataraja.jpg" data-description="The Nataraja statue captures Shiva in his dance of creation, preservation, and destruction. It’s a prime example of Chola bronze work, renowned for its detailed craftsmanship." data-context="Under the Chola dynasty, South Indian art flourished, particularly in bronze sculptures. The Nataraja symbolizes the cycle of time and cosmic rhythm in Hinduism.">
                 <div class="content">
-                    <h2>100 AD</h2>
-                    <p>Short description of the event.</p>
+                    <h2>Nataraja (c. 850–1250 CE)</h2>
+                    <p>A bronze statue of Lord Shiva as the cosmic dancer.</p>
+                </div>
+            </div>
+            
+            <!-- Mughal Empire -->
+            <div class="timeline-item left" data-image="akbarnama.jpg" data-description="The Akbarnama is a collection of miniatures that narrate the events of Emperor Akbar's reign. The paintings are celebrated for their vivid detail and blend of Persian and Indian styles." data-context="Mughal art was heavily influenced by Persian culture, leading to a unique Indo-Persian artistic tradition. The Akbarnama exemplifies the Mughals' appreciation for detailed documentation and artistic expression.">
+                <div class="content">
+                    <h2>Akbarnama (c. 1526–1858 CE)</h2>
+                    <p>Miniature paintings illustrating scenes from Emperor Akbar's life.</p>
+                </div>
+            </div>
+            
+            <!-- Colonial Period -->
+            <div class="timeline-item right" data-image="raja_ravi_varma.jpg" data-description="Raja Ravi Varma is celebrated for his ability to fuse Indian themes with Western realism. His paintings, such as those of Hindu deities, brought classical Indian stories to life for a broad audience." data-context="As India came under British rule, the art scene saw a fusion of Indian and European styles. Raja Ravi Varma played a crucial role in this cultural synthesis, making art accessible to the masses.">
+                <div class="content">
+                    <h2>Raja Ravi Varma’s Paintings (c. 1600–1947 CE)</h2>
+                    <p>Oil paintings depicting Indian mythology with European techniques.</p>
+                </div>
+            </div>
+            
+            <!-- Post-Independence -->
+            <div class="timeline-item left" data-image="husains_horses.jpg" data-description="M.F. Husain, often called the 'Picasso of India,' is known for his bold, modernist style. His horse paintings are particularly famous, symbolizing power, grace, and freedom." data-context="Post-independence India saw the rise of modern art movements, with artists like Husain leading the charge. His work reflects the dynamic and diverse cultural landscape of contemporary India.">
+                <div class="content">
+                    <h2>Husain’s Horses (1947–present)</h2>
+                    <p>A vibrant, abstract painting of horses in motion.</p>
                 </div>
             </div>
         </div>
-        
     </div>
 
+    <!-- Popup for Detailed View -->
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
             <h2 id="popup-title"></h2>
             <p id="popup-description"></p>
+            <p id="popup-context"></p>
             <img id="popup-image" src="" alt="Event Image">
         </div>
     </div>
