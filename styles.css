@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Set background to black */
+    color: white; /* Set text color to white for readability */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+.timeline-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.timeline-item {
+    padding: 10px 20px;
+    position: relative;
+    width: 45%; /* Adjust width of each item */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 55%; /* Position right items to the right side */
+}
+
+.timeline-item .content {
+    padding: 20px;
+    background: #222; /* Dark background for content */
+    color: white; /* White text for content */
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Lighter shadow for contrast */
+}
+
+.timeline-item .content h2 {
+    margin: 0;
+}
+
+.timeline-item .content p {
+    margin: 10px 0 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #555; /* Darker line color for better visibility */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.timeline-item.left::before {
+    left: 100%; /* Line appears on the right of the left box */
+}
+
+.timeline-item.right::before {
+    left: -2px; /* Line appears on the left of the right box */
+}
+
+.timeline-item .content {
+    margin-top: 30px;
+}
+
+.timeline-item.left .content {
+    margin-left: 30px;
+}
+
+.timeline-item.right .content {
+    margin-right: 30px;
+}
+
+.timeline-item .content::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border: 4px solid #555;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item.right .content::before {
+    left: auto;
+    right: -20px;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background for the popup */
+    padding-top: 60px;
+}
+
+.popup-content {
+    background-color: #222; /* Darker popup background */
+    color: white; /* White text for the popup */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white; /* Make close button white on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
