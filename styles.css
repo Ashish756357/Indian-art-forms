@@ -1,7 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Set background to black */
-    color: white; /* Set text color to white for readability */
+    background-image: url('https://travel-blog.happyeasygo.com/wp-content/uploads/2020/05/Hampi-Karnataka.jpg');/* link of the background image*/
+    background-size: cover; /* Ensure the background covers the whole page */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    color: #f0e68c; /* Change the text color to a light shade for readability */
     margin: 0;
     padding: 0;
 }
@@ -9,9 +11,11 @@ body {
 h1 {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: rgba(139, 0, 0, 0.8); /* Deep red with slight transparency */
+    color: #f5f3f2; /* Sandy brown color for the title */
     margin: 0;
+    border-radius: 10px; /* Slight rounding for a smoother appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 .timeline-container {
@@ -44,15 +48,16 @@ h1 {
 
 .timeline-item .content {
     padding: 20px;
-    background: #222; /* Dark background for content */
-    color: white; /* White text for content */
+    background: rgba(0, 130, 99, 0.81); /* Indigo background with transparency */
+    color: #fffacd; /* Lemon chiffon color for text */
     border-radius: 6px;
     position: relative;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Lighter shadow for contrast */
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.5); /* Orange shadow for contrast */
 }
 
 .timeline-item .content h2 {
     margin: 0;
+    color: #ffd700; /* Gold color for headings */
 }
 
 .timeline-item .content p {
@@ -64,7 +69,7 @@ h1 {
     position: absolute;
     width: 2px;
     height: 100%;
-    background: #555; /* Darker line color for better visibility */
+    background: #cd853f; /* Peruvian brown color for the timeline line */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -99,8 +104,8 @@ h1 {
     transform: translateX(-50%);
     width: 10px;
     height: 10px;
-    background: #333;
-    border: 4px solid #555;
+    background: #ff4500; /* Orange-red dot */
+    border: 4px solid #8b0000; /* Dark red border */
     border-radius: 50%;
     z-index: 1;
 }
@@ -125,8 +130,8 @@ h1 {
 }
 
 .popup-content {
-    background-color: #222; /* Darker popup background */
-    color: white; /* White text for the popup */
+    background-color: rgba(47, 79, 79, 0.9); /* Dark slate grey background */
+    color: #f5f5dc; /* Beige color for the popup text */
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -139,6 +144,7 @@ h1 {
 
 .popup-content h2 {
     margin-top: 0;
+    color: #ffd700; /* Gold color for popup heading */
 }
 
 .popup-content img {
@@ -146,10 +152,11 @@ h1 {
     height: auto;
     margin-top: 20px;
     border-radius: 10px;
+    border: 2px solid #ffd700; /* Gold border for image */
 }
 
 .close {
-    color: #aaa;
+    color: #ffd700; /* Gold color for close button */
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -157,7 +164,30 @@ h1 {
 
 .close:hover,
 .close:focus {
-    color: white; /* Make close button white on hover */
+    color: #ffffff; /* White color on hover */
     text-decoration: none;
     cursor: pointer;
+}
+ 
+/* footer styling */
+footer {
+    background-color: #271b02;
+    color: #ffebc7; /* Vibrant gold color matching historic themes */
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #555;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #f0a500;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
